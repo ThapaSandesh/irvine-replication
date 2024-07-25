@@ -137,3 +137,28 @@ ul li {
     height: 100%;
     background-color: #e1e1e1;
 }
+.menu-item .menu span.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    opacity: 0.3;
+    background-color: #711d51;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition-property: width, background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    color: var(--white)!important;
+}
+.m-active span.bg{
+    width: 100%;
+    
+}
+.m-inactive span.bg{
+    width: 0;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-delay: .1s;
+}
